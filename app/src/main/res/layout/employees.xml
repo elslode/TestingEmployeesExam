@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="8dp">
+
+      <TextView
+          android:id="@+id/textViewLabelName"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="8dp"
+          android:layout_marginStart="16dp"
+          android:text="Имя:"
+          app:layout_constraintStart_toEndOf="@+id/imageViewAvatars"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+          android:id="@+id/textViewLabelLastName"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="8dp"
+          android:layout_marginStart="47dp"
+          android:text="Фамилия:"
+          app:layout_constraintStart_toEndOf="@+id/imageViewAvatars"
+          app:layout_constraintTop_toBottomOf="@+id/textViewLabelName" />
+
+      <TextView
+          android:id="@+id/textViewName"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="8dp"
+          app:layout_constraintStart_toEndOf="@+id/textViewLabelName"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+          android:id="@+id/textViewLastName"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="8dp"
+          app:layout_constraintStart_toEndOf="@+id/textViewLabelLastName"
+          app:layout_constraintTop_toBottomOf="@+id/textViewName" />
+
+      <TextView
+          android:id="@+id/textViewSpecialty"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="8dp"
+          android:layout_marginStart="4dp"
+          android:text=""
+          app:layout_constraintStart_toEndOf="@+id/textViewLabelSpecialty"
+          app:layout_constraintTop_toBottomOf="@+id/textViewLastName" />
+
+      <TextView
+          android:id="@+id/textViewLabelSpecialty"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="8dp"
+          android:layout_marginStart="80dp"
+          android:text="Специальность:"
+          app:layout_constraintStart_toEndOf="@+id/imageViewAvatars"
+          app:layout_constraintTop_toBottomOf="@+id/textViewLabelLastName" />
+
+
+      <ImageView
+          android:id="@+id/imageViewAvatars"
+          android:layout_width="108dp"
+          android:layout_height="110dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          tools:srcCompat="@tools:sample/avatars" />
+
+      <TextView
+          android:id="@+id/textViewLabelBirthday"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="8dp"
+          android:text="День Рождения:"
+          app:layout_constraintStart_toEndOf="@+id/imageViewAvatars"
+          app:layout_constraintTop_toBottomOf="@+id/textViewLabelSpecialty" />
+
+      <TextView
+          android:id="@+id/textViewBirthday"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="8dp"
+          app:layout_constraintStart_toEndOf="@+id/textViewLabelBirthday"
+          app:layout_constraintTop_toBottomOf="@+id/textViewSpecialty" />
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
